@@ -8,5 +8,5 @@ setup(
     author_email = 'pranav.mesrham@globallogic.com',
     packages = ['furniture_factory_project'],
     install_requires = ['django = 2.2.5', 'djangorestframework = 3.13.2', 'pytz = 2021.1', 'sqlparse = 0.4.1'],
-    scripts=['manage.py'])
+    scripts=['manage.py']
 )
