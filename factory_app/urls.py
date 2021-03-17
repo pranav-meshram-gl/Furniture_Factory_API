@@ -4,8 +4,7 @@ from factory_app.views import *
 from rest_framework.routers import DefaultRouter
 
 router = DefaultRouter()
-router.register('table-leg', TableLegModelViewSet)
-router.register('table', TableModelViewSet)
+router.register('table', TableViewSet, basename='texts')
 router.register('leg', LegModelViewSet)
 router.register('feet', FeetModelViewSet)
 
