@@ -2,4 +2,3 @@ django==2.2.5
 djangorestframework==3.12.2
 pytz==2021.1
 sqlparse==0.4.1
-django-rest-multiple-models==2.1.3
