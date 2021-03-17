@@ -7,6 +7,7 @@ $ git clone https://github.com/pranav-meshram-gl/Furniture_Factory_API.git
 $ cd Furniture_Factory_API
 
 $ virtualenv (env_name)
+
 $ ./Scripts/activate
 
 
@@ -30,12 +31,17 @@ Urls are present in urls.py files. Routers have been used here. Once you start t
 Below are the requested API urls for CRUD operations:
 
     "table": "http://127.0.0.1:8000/table/",
+    
               "http://127.0.0.1:8000/table/<id>",
               
+              
     "leg": "http://127.0.0.1:8000/leg/",
+    
            "http://127.0.0.1:8000/leg/<id>"
            
+           
     "feet": "http://127.0.0.1:8000/feet/"
+    
             "http://127.0.0.1:8000/feet/<id>"
             
             
@@ -52,7 +58,10 @@ Data follows the requested custom validations as mentions. All validation are pr
 
 ### Test Cases
 As you mentioned, all the test cases are written in the tests.py file.
+
 To run the tests:
+
   stop the running dev server
+  
   (env)$ python manage.py test
   
