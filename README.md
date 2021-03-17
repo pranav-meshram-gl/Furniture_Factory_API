@@ -34,6 +34,9 @@ Below are the requested API urls for CRUD operations:
     
               "http://127.0.0.1:8000/table/<id>",
               
+              "http://127.0.0.1:8000/table-leg/",
+              "http://127.0.0.1:8000/table-leg/<id>",
+              
               
     "leg": "http://127.0.0.1:8000/leg/",
     
@@ -65,3 +68,8 @@ To run the tests:
   
   (env)$ python manage.py test
   
+  if it shows : Ran 0 tests in 0.000s. 
+  
+  Run the below command
+  
+  (env)$ python manage.py test factory_app
