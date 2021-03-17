@@ -13,12 +13,16 @@ from factory_app.serializers import  TableLegSerializer, TableSerializer, LegSer
 # Create your views here.
 # Upon visiting the home page the the default basic urls for corresponding views via DefaultRouter will be presented.
 
-class TableViewSet(ObjectMultipleModelAPIViewSet):
-    querylist = [
-        {'queryset': Table.objects.all(), 'serializer_class': TableSerializer},
-        {'queryset': TableLeg.objects.all(), 'serializer_class': TableLegSerializer},
-    ]
+class TableLegModelViewSet(ModelViewSet):
+    queryset = TableLeg.objects.all()
+    serializer_class = TableLegSerializer
 
+
+class TableModelViewSet(ModelViewSet):
+    queryset = Table.objects.all()
+    serializer_class = TableSerializer
+    
+    
 class LegModelViewSet(ModelViewSet):
     queryset = Leg.objects.all()
     serializer_class = LegSerializer
