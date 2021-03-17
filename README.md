@@ -3,6 +3,7 @@
 ## Setup
 
 $ git clone https://github.com/pranav-meshram-gl/Furniture_Factory_API.git
+
 $ cd Furniture_Factory_API
 
 $ virtualenv (env_name)
